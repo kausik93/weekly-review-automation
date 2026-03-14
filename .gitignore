@@ -1,0 +1,40 @@
+# Personal / secret config (copy config.example.yaml -> config.yaml)
+config.yaml
+
+# Cached TickTick auth token
+.ticktick_token.json
+*.token.json
+
+# Environment files with credentials
+.env
+.env_*
+*.env
+
+# Personal data exports (diet / workout logs) and generated reviews
+data/
+food/
+fitness/
+*.xls
+*.xlsx
+# NOTE: sample_data/*.csv is intentionally tracked (synthetic fixtures)
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

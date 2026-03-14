@@ -1,0 +1,50 @@
+# Weekly Review Configuration (example)
+#
+# Copy this file to `config.yaml` and edit it with your own settings.
+# `config.yaml` is gitignored so your personal values stay out of version control.
+
+ticktick:
+  # The project ID for your monthly goals in TickTick.
+  # Find this in the TickTick web URL when viewing the project:
+  #   https://ticktick.com/webapp/#/project/<PROJECT_ID>/tasks
+  monthly_goals_project_id: "your_project_id_here"
+
+  # Path to store the authentication token (to avoid re-authenticating each run).
+  # This file is gitignored.
+  token_cache_file: ".ticktick_token.json"
+
+domains:
+  # Goal domains and the title prefixes they map to in TickTick.
+  # Tasks are grouped by matching these prefixes (e.g. "[Health] Walk daily").
+  # Customize these to match the domains you use.
+  - name: "Health"
+    prefix: "[Health]"
+  - name: "Career"
+    prefix: "[Career]"
+  - name: "Learning"
+    prefix: "[Learning]"
+  - name: "Relationships"
+    prefix: "[Relationships]"
+  - name: "Finances"
+    prefix: "[Finances]"
+  - name: "Home"
+    prefix: "[Home]"
+
+targets:
+  # Example nutrition targets (set your own).
+  daily_calorie_max: 2000
+  daily_protein_min: 100
+
+  # Example exercise target (set your own).
+  weekly_gym_sessions: 3
+
+paths:
+  # Where generated reviews are written. Point this at any Markdown
+  # output directory (e.g. an Obsidian vault folder).
+  obsidian_vault: "/path/to/your/notes-vault"
+  weekly_review_folder: "Goals/Weekly reviews"
+
+current_period:
+  # Current period, used for context/file naming.
+  month: "January"
+  year: 2026
